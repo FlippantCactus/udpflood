@@ -35,7 +35,5 @@ func main () {
     }
 
     //Sleep forever
-    sleeper := make(chan bool, 1)
-    <-sleeper
-
+    <-make(chan bool, 1)
 }
